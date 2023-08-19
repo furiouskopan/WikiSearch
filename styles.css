@@ -1,0 +1,123 @@
+body {
+    font-family: 'Exo', sans-serif;
+    background-color: #222;
+    padding: 40px;
+    color: #EAEAEA;
+    transition: background 0.3s;
+    position: relative;  
+}
+
+#main-container {
+    padding-top: 16%;
+    transform: translateY(-50%);
+    transition: padding-top 0.5s ease;
+}
+html {
+    margin-right: calc(100vw - 100%); 
+}
+
+.search-container {
+text-align: center;
+transition: transform 0.5s;
+position: relative; 
+padding-bottom: 40px; 
+
+
+}
+
+.input-container {
+display: inline-flex;
+border: 1px solid #555;
+border-radius: 25px;
+overflow: hidden;
+max-width: 500px; 
+width: 100%;
+font-family: 'Exo', sans-serif;
+
+}
+
+#search-input {
+border: none;
+padding: 10px 20px;
+background-color: #333;
+color: #EAEAEA;
+border-radius: 25px 0 0 25px;
+outline: none;
+flex: 1;
+font-family: 'Exo', sans-serif;
+}
+
+button {
+cursor: pointer;
+background-color: #007BFF;
+border: none;
+color: #FFF;
+padding: 10px 20px;
+border-radius: 0 25px 25px 0;
+transition: background-color 0.3s;
+font-family: 'Exo', sans-serif;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.article-card {
+background-color: #333;
+padding: 15px;
+margin-top: 10px;
+border: 1px solid #555;
+border-radius: 5px;
+max-width: 800px; 
+margin: 10px auto; 
+}
+.article-card:hover {
+background-color: #0000001f;
+}
+
+.article-card a {
+color: #007BFF;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.article-card a:hover {
+color: #0056b3;
+}
+
+#load-more {
+display: block;
+margin: 30px auto;
+background-color: #007BFF;
+padding: 10px 40px;
+border-radius: 25px;
+border: none;
+font-size: 16px;
+font-family: 'Exo', sans-serif;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#load-more:hover{
+    background-color: #0056b3;
+}
+
+#results-container {
+transition: transform 0.5s;
+width: 100%;
+}
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #FF0000; /* You can choose your desired color */
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+body {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+}
